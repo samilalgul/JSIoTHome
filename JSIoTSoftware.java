@@ -7,17 +7,30 @@ public class JSIoTSoftware {
 
     void switchSleepMode(){
 
+        System.out.println("Sleep Mode Switched");
+        sleep = true;
+
     }
     void switchAwakeMode(){
+
+        System.out.println("Awake Mode Switched");
+        sleep = false;
 
     }
     boolean sleepMode(){
 
-        return false;
+        return sleep;
 
     }
 
     void commandSmartphone(){
+        if (sleep == true){
+            System.out.println();
+
+        }
+        if (sleep == false){
+
+        }
 
     }
 
